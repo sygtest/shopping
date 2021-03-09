@@ -1,0 +1,44 @@
+<template>
+  <div class="tab-bar-item" @click="itemClick">
+    <div class="item-text" :style="activeStyle">
+      <slot name="text"></slot>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "TabBarItem",
+  props: {
+    link: {
+    type: String,
+    require: true
+    }
+  },
+   computed: {
+    isActive() {
+      return this.$route.path.indexOf(this.link) !== -1
+    },
+    activeStyle() {
+      return this.isActive ? {'color': 'red'} : {}
+    }
+  },
+  methods: {
+    itemClick() {
+      this.$router.replace(this.link)
+    }
+  }
+};
+</script>
+
+<style scoped>
+.tab-bar-item {
+  flex: 1;
+}
+
+.item-text {
+  font-size: 12px;
+  margin-top: 3px;
+  color: #333;
+}
+</style>

@@ -1,0 +1,364 @@
+@import 'normalize.css';
+
+
+/* <!-- 头部搜索 --> */
+#headSearch{
+  background-color: #fff;
+  padding: 0 0 10px 0;
+}
+
+#headSearch h1 a{
+  display: block;
+  width: 190px;
+  height: 58px;
+  background: url('~assets/img/Logo.jpg') center;
+  text-indent: -999px;
+  margin-top: 8px;
+  text-align: center;
+}
+
+#headSearch .code{
+  width: 72px;
+  height: 86px;
+  border: 1px solid #eee;
+  position: relative;
+}
+
+#headSearch .code img{
+  width: 62px;
+  height: 62px;
+}
+
+#headSearch .close {
+  position: absolute;
+  left: -16px;
+  top: 1px;
+  width: 14px;
+  height: 14px;
+  border: 1px solid #eee;
+  font-size: 14px;
+  color: #ddd;
+  cursor: pointer;
+}
+
+#headSearch .search{
+  width: 630px;
+  margin: 0 auto;
+}
+
+#headSearch .searchTab{
+  height: 22px;
+  padding-left: 12px;
+}
+
+#headSearch .searchTab li{
+  float: left;
+  width: 36px;
+  line-height: 22px;
+  margin-left: 6px;
+  text-align: center;
+  color: #f40;
+  cursor: pointer;
+}
+
+#headSearch .searchTab li:hover{
+  background-color: #ffeee5;
+}
+
+#headSearch .searchTab li.active{
+  background-color: pink;
+  color: #fff;
+  font-weight: bold;
+
+  background-image: linear-gradient(to right,#ff9000,#ff5000);
+  border-radius: 6px 6px 0 0;
+}
+
+#headSearch .searchContent{
+  height: 40px;
+}
+
+#headSearch .searchBox{
+  width: 554px;
+  height: 40px;
+  box-sizing: border-box;
+  border: 2px solid #ff5000;
+  border-right: none;
+  border-radius: 20px 0 0 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+#headSearch .searchBox input{
+  width: 490px;
+  height: 36px;
+  line-height: 36px;
+  outline: none;
+  border: none;
+  text-indent: 30px;
+}
+
+#headSearch .searchBox i{
+  position: absolute;
+  height: 50px;
+  width: 40px;
+  left: 10px;
+  top: 8px;
+}
+
+#headSearch .searchBox span{
+  position: absolute;
+  width: 40px;
+  height: 36px;
+  line-height: 36px;
+  font-size: 40px;
+  display: inline-block;
+}
+
+#headSearch .btn button{
+  width: 70px;
+  height: 40px;
+  border-radius: 0 20px 20px 0;
+  background-image: linear-gradient(to right,#ff9000,#ff5000);
+  font-size: 16px;
+  color: #fff;
+  font-weight: bold;
+  border: 0;
+}
+
+#headSearch .hotKey a{
+  margin: 5px 5px;
+  height: 16px;
+  line-height: 16px;
+}
+
+#headSearch .hotKey a:hover{
+  color: #f40;
+}
+
+/* 商品分类导航 */
+#goods-category h2{
+  width: 190px;
+  height: 30px;
+  font-size: 16px;
+  line-height: 30px;
+  color: #fff;
+  text-align: center;
+  background-color: #f50;
+}
+
+#goods-category ul{
+  /* width: 1000px; */
+  /* 使用函数计算宽度 */
+  /* width: calc(100% - 190px); */
+  /* 触发bfc */
+  margin-left: 190px;
+  /* overflow: hidden; */
+  height: 30px;
+  background-image: linear-gradient(to right,#ff9000,#ff5000);
+}
+
+#goods-category li{
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+  text-align: center;
+  float: left;
+  margin: 0 7px;
+}
+
+#goods-category li a{
+  color: #fff;
+  font-weight: bold;
+}
+/* 首屏内容 */
+#firstScreen .first-left{
+  width: 190px;
+  background-color:#fff;
+  height: 460px;
+  border: 1px solid #ff500f;
+  box-sizing: border-box;
+  border-top: none;
+
+}
+
+#firstScreen .first-left li{
+  height: 32px;
+  line-height: 32px;
+  padding-left: 25px; 
+
+  transition: background-color 0.3s
+}
+
+#firstScreen .first-left li:hover{
+  background-color: #ffe4dc;
+  color: #f50;
+}
+
+#firstScreen .first-left li:hover a{
+  color: #f50;
+}
+
+
+#firstScreen .first-left li a{
+  font-size: 16px;
+}
+
+#firstScreen .first-left li a:hover{
+  text-decoration: underline;
+}
+
+#firstScreen .first-left span{
+  font-size: 12px;
+  color: #999;
+  margin-right: 5px;
+}
+
+
+/* 首屏中部内容 */
+#firstScreen .first-middle {
+  width: 1000px;
+  /* background-color: blue; */
+  height: 460px;
+  /* background-image: '~assets/img/1.jpg' ; */
+}
+
+.el-carousel__item h3 {
+  color: silver;
+  font-size: 14px;
+  opacity: 0.75;
+  line-height: 200px;
+  margin: 0;
+}
+
+.a4{
+  width: 100px;
+}
+.el-carousel__item:nth-child(2n) {
+  background-color: skyblue;
+}
+
+.el-carousel__item:nth-child(2n+1) {
+  background-color: #d3dce6;
+}
+
+
+
+#firstScreen .first-right {
+  /* width: calc(100% -800px- 190px); */
+  width: 200px;
+  /* background-color: chartreuse; */
+  height: 460px;
+}
+
+#firstScreen .right-top{
+  height: 230px;
+  width: 100%;
+  /* background-color: red; */
+}
+
+#firstScreen .icon{
+  height: 230px;
+  width: 100%;
+  table-layout: fixed; /* 定义列宽的算法，
+  fixed的计算方式为根据表格宽度自动计算列宽，
+  每列的宽度为均分整个表格的宽度*/
+}
+
+#firstScreen .icon td{
+  border: 1px solid #f4f4f4;
+  text-align: center;
+}
+
+#firstScreen .icon td span{
+  display: block;
+  width: 24px;
+  height: 24px;
+  margin: 0 auto;
+  background: url('~assets/img/icon.png');
+}
+
+#firstScreen .icon td i{
+  line-height: 34px;
+  color: #333;
+}
+
+#firstScreen .icon .item1 span{
+  background-position: 0 0;
+}
+#firstScreen .icon .item2 span{
+  background-position: 0 -43px;
+}
+#firstScreen .icon .item3 span{
+  background-position: 0 -86px;
+}
+#firstScreen .icon .item4 span{
+  background-position: 0 -130px;
+}
+#firstScreen .icon .item5 span{
+  background-position: 0 -175px;
+}
+#firstScreen .icon .item6 span{
+  background-position: 0 -220px;
+}
+#firstScreen .icon .item7 span{
+  background-position: 0 -265px;
+}
+#firstScreen .icon .item8 span{
+  background-position: 0 -310px;
+}
+#firstScreen .icon .item9 span{
+  background-position: 0 -352px;
+}
+#firstScreen .icon .item10 span{
+  background-position: 0 -398px;
+}
+#firstScreen .icon .item11 span{
+  background-position: 0 -440px;
+}
+#firstScreen .icon .item12 span{
+  background-position: 0 -485px;
+}
+
+/* 底部广告 */
+#bottom-ad{
+  margin-top: 15px;
+  border: none;
+  /* background-color: aqua; */
+}
+#bottom-ad ul{
+  display: flex;
+}
+
+#bottom-ad .today-recomend{
+  background-color: #999;
+  height: 150px;
+  color: #fff
+}
+
+#bottom-ad ul li{
+  float: left;
+  width: 280px;
+  height: 150px;
+  text-align: center;
+  line-height: 150px;
+  color: #fff;
+  box-sizing: border-box;
+  flex: 1;
+}
+
+#bottom-ad ul img{
+  width: 260px;
+  height: 150px;
+  border: none;
+}
+
+/* 底部导航栏 */
+#bottom{
+  margin-top: 30px;
+  width: 100%;
+  background-color: rgb(245, 245, 245);
+}
+
+
+
